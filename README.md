@@ -45,7 +45,6 @@
   - font-family determines what we want our text to look like (the typeface).
     - e.g. Helvetica is a mac specific type face and many windows computer might not have it , hence when giving font family we also provide a backup generic fontType e.g. sans-sarif (all edges are at right angles while the serif has some decoration around the edges.).
   - for external fonts we can use fonts.google.com and get the link of the font weight that we want and put that link to the head section of the html and then use that style in our css font-family.
-  - for external fonts we can use fonts.google.com and get the link of the font weight that we want and put that link to the head section of the html and then use that style in our css font-family.
 
 - CSS Box model :
   - CSS properties **margin, padding , border** along with width and height form a really important css concept known as the box model.
