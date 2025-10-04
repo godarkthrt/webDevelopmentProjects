@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        h1 {
+            background-color: blue;
+            color: white;
+            margin-top: 0;
+            padding: 20px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-group  a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(39, 185, 105);
+            padding: 10px;
+            text-wrap: wrap;
+            display: inline-block;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            
+        }
+
+        .pos-container {
+            max-width: 200px;
+            border: 1px solid black;
+            margin-top: 40px;
+            /* text-align: left; */
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pos-container code {
+            display: block;
+            /* text-align: left; */
+        }
+
+        #box {
+            background-color: green;
+            width: 100%;
+            height: 200px;
+            
+        }
+
+        .static-pos {
+            position: static;
+            left: 50px;
+            right: 50px;
+        }
+        
+        .relative-pos {
+            position: relative;
+            left: 50px;
+            right: 50px;
+        }
+        
+        .absolute-pos {
+            position: absolute;
+            left: 50px;
+            right: 50px;
+        }
+        .fixed-pos {
+            position: fixed;
+            left: 50px;
+            right: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning Demo</h1>
+    <div class="btn-group">
+        <a href="#" id="static-btn">Static Positioning</a>
+        <a href="#" id="relative-btn">Relative Positioning</a>
+        <a href="#" id="absolute-btn">Absolute Positioning</a>
+        <a href="#" id="fixed-btn">Fixed Positioning</a>
+    </div>
+
+    <div class="pos-container">
+        <h2>Static Positioning</h2>
+        <p>
+            <code>position: static;</code>
+            <code>left: 50px;</code>
+            <code>right: 50px;</code>
+        </p>
+        <div id="box" class="static-pos"></div>
+    </div>
+    <script>
+        const staticBtn = document.getElementById("static-btn");
+        const relativeBtn = document.getElementById("relative-btn");
+        const absoluteBtn = document.getElementById("absolute-btn");
+        const fixedBtn = document.getElementById("fixed-btn");
+        const box = document.getElementById("box");
+
+        staticBtn.addEventListener('click', () => {
+            console.log('static button clicked')
+            box.classList.value = '';
+            box.classList.add('static-pos')
+        });
+
+        relativeBtn.addEventListener('click', () => {
+            console.log('relative button clicked')
+            box.classList.value = '';
+            box.classList.add('relative-pos')
+        });
+
+        absoluteBtn.addEventListener('click', () => {
+            console.log('absolute button clicked')
+            box.classList.value = '';
+            box.classList.add('absolute-pos')
+        });
+
+        fixedBtn.addEventListener('click', () => {
+            console.log('fixed button clicked')
+            box.classList.value = '';
+            box.classList.add('fixed-pos')
+        });
+    </script>
+</body>
+</html>
