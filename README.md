@@ -61,3 +61,6 @@
   - static - default css positioning.
   - relative - elements gets positioned relative to its default position, using left/top/right/bottom.
   - absolute - position relative to the nearest positioned ancestor or top left corner of the web page.
+    - element is taken out of the flow so does not acquire any space in usual position.
+    - z-index becomes important with it absolute positioning.
+  - fixed - position relative to top left of browser window.
