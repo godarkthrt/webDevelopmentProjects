@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        .card-container {
+            /* display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem; */
+            display: flex;
+            gap: 10px;
+
+            
+        }
+        .card {
+            border: 1px solid black;
+            padding: 0.5rem;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: transform 0.5s ;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+        
+        .card > .btn {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0.50rem;
+            background-color: lightcoral;
+            border-radius: 5px;
+            display: inline-block;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+
+        <div class="card">
+            <img  src="https://images.unsplash.com/photo-1759434188862-4603168cb112?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="beautiful view of snow covered land">
+            <h3 class="card-title">Places i want to visit</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, incidunt.</p>
+            <a class="btn" href="#">Read More</a>
+        </div>
+
+        <div class="card">
+            <img  src="https://images.unsplash.com/photo-1759434188862-4603168cb112?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="beautiful view of snow covered land">
+            <h3 class="card-title">Places i want to visit</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, incidunt.</p>
+            <a class="btn" href="#">Read More</a>
+        </div>
+    </div>
+    </body>
+</html>
