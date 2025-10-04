@@ -47,6 +47,7 @@
   - for external fonts we can use fonts.google.com and get the link of the font weight that we want and put that link to the head section of the html and then use that style in our css font-family.
 
 - CSS Box model :
+
   - CSS properties **margin, padding , border** along with width and height form a really important css concept known as the box model.
   - height and width allow us to modify the default size of our html element, we can set it with pixel value like 40px or percentage like 100%.
   - border width is not including height and width i.e. if width of an element is set to 40px and border is 10px wide then border will expand outwards i.e. total width will be 40px+10px
@@ -54,3 +55,9 @@
   - padding is another property that is mostly seen when we have content such as text.
   - adding padding property will mean it will push border outside, but again width and height of our content box does not change.
   - we want to create artificial boxes to group certain elements so that we can style them together then we use div (content division element).
+
+- CSS positioning -
+
+  - static - default css positioning.
+  - relative - elements gets positioned relative to its default position, using left/top/right/bottom.
+  - absolute - position relative to the nearest positioned ancestor or top left corner of the web page.
