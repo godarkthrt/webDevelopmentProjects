@@ -64,3 +64,28 @@
     - element is taken out of the flow so does not acquire any space in usual position.
     - z-index becomes important with it absolute positioning.
   - fixed - position relative to top left of browser window.
+
+- CSS for website layouts -
+
+  - we have already seen positioning in last section, now we are going further.
+  - `display` :
+
+    - inline : will be in same line as others, but we can't set width and height for them.
+    - block : a full width block, so if there is another element after it then it will go to next line.
+    - inline-block : this allows us to set height and width for elements that go in the same line.
+    - none : make an element disappear from the screen.
+
+  - `float` - wrapping text around a particular element. now mostly used to wrap text around image.
+    - `float: left` to have lets say a image to the left and text wrapping it to the right and down it.
+    - we might have to use `clear` property with it if we dont want wrapping behavior for next element as well. basically to ignore anything that is floating around.
+
+- Responsive websites : how layout should change according to the size of the screen.
+
+  - 4 main ways to do it :
+    - media queries
+    - css grid - allows us to layout elements in 2D layout of rows and columns.
+    - css flexbox - allows us to create 1D layout, i.e. boxes laid in horizontal or vertical layout.
+    - external frameworks e.g. bootstrap
+
+- media queries - adding breakpoints to define responsive layouts.
+  -
