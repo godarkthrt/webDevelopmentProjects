@@ -1,0 +1,26 @@
+/* Write your code here: */
+
+/* group selector - to select multiple elements at a time*/
+h1, h2 {
+    color: blueviolet;
+}
+
+/* child selector -  */
+.box > p {
+    color: firebrick;
+}
+
+/* decendant selector - any level deep */
+.box li {
+    color: blue;
+}
+
+/* chaining selector - apply where all selectors are true, ofcourse element name should be the first and class/id can come later */
+li.done {
+    color: seagreen;
+}
+
+/* combining selectors  */
+ul p.done {
+    font-size: 0.5rem;
+}
